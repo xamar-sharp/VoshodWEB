@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoshodWEB.TracksPage" xmlns:local="clr-namespace:VoshodWEB.MarkupExtensions">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical">
+            <SearchBar x:Name="search" FontFamily="Base" CancelButtonColor="IndianRed" Placeholder="{local:Localizer MusicSearch}" SearchCommand="{Binding SearchTrackCommand}" SearchCommandParameter="{Binding Text,Source={x:Reference search}}"/>
+            <RefreshView x:Name="refresh" RefreshColor="Green" Command="{Binding GetTracksCommand}" IsRefreshing="False" CommandParameter="{x:Reference refresh}">
+                <CollectionView x:Name="coll" ItemsSource="{Binding Musics}" SelectionMode="Single" SelectionChangedCommand="{Binding ItemSelectedCommand}" SelectionChangedCommandParameter="{Binding SelectedItem,Source={x:Reference coll}}">
+                    <CollectionView.Header>
+                        <Label Text="{local:Localizer MusicsHeader}" HorizontalTextAlignment="Center" FontSize="35"/>
+                    </CollectionView.Header>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <Label Text="{Binding Title}" TextColor="Purple"/>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+            </RefreshView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

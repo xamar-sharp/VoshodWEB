@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32407.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoshodWEB.Android", "VoshodWEB\VoshodWEB.Android\VoshodWEB.Android.csproj", "{F73CC552-D9F1-4D2F-9C3D-78396F9865BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VoshodWEB", "VoshodWEB\VoshodWEB\VoshodWEB.csproj", "{6DE8FB67-1905-47FC-A70B-5865D220FB08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F73CC552-D9F1-4D2F-9C3D-78396F9865BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F73CC552-D9F1-4D2F-9C3D-78396F9865BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F73CC552-D9F1-4D2F-9C3D-78396F9865BE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{F73CC552-D9F1-4D2F-9C3D-78396F9865BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F73CC552-D9F1-4D2F-9C3D-78396F9865BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F73CC552-D9F1-4D2F-9C3D-78396F9865BE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6DE8FB67-1905-47FC-A70B-5865D220FB08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DE8FB67-1905-47FC-A70B-5865D220FB08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DE8FB67-1905-47FC-A70B-5865D220FB08}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6DE8FB67-1905-47FC-A70B-5865D220FB08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DE8FB67-1905-47FC-A70B-5865D220FB08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DE8FB67-1905-47FC-A70B-5865D220FB08}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {031893DC-8BA2-4376-9C83-95F520FB8C85}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoshodWEB.App" xmlns:local="clr-namespace:VoshodWEB.Converters">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Style.Setters>
+                    <Setter Property="TextColor" Value="Black"/>
+                    <Setter Property="FontFamily" Value="Base"/>
+                </Style.Setters>
+            </Style>
+            <local:DurationConverter x:Key="durationConv"/>
+            <local:TimeSpanToSecondsConverter x:Key="secondConv"/>
+            <Style TargetType="ContentPage">
+                <Style.Setters>
+                    <Setter Property="BackgroundColor" Value="GreenYellow"/>
+                </Style.Setters>
+            </Style>
+            <Style TargetType="Frame">
+                <Style.Setters>
+                    <Setter Property="VisualStateManager.VisualStateGroups">
+                        <Setter.Value>
+                            <VisualStateGroupList>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Normal">
+                                        <VisualState.Setters>
+                                            <Setter Property="BorderColor" Value="Red"/>
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                    <VisualState x:Name="Loaded">
+                                        <VisualState.Setters>
+                                            <Setter Property="BorderColor" Value="Green"/>
+                                        </VisualState.Setters>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateGroupList>
+                        </Setter.Value>
+                    </Setter>
+                </Style.Setters>
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>

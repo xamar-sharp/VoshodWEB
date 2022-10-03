@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VoshodWEB.MusicPage" xmlns:home="clr-namespace:VoshodWEB"  xmlns:octane="clr-namespace:Octane.Xamarin.Forms.VideoPlayer;assembly=Octane.Xamarin.Forms.VideoPlayer" xmlns:local="clr-namespace:VoshodWEB.MarkupExtensions">
+
+    <AbsoluteLayout>
+        <Label Text="{Binding Title}" FontSize="35" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" AbsoluteLayout.LayoutBounds="0.5,0.0125,1,0.14" AbsoluteLayout.LayoutFlags="All">
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" NumberOfTapsRequired="2"/>
+            </Label.GestureRecognizers>
+        </Label>
+        <octane:VideoPlayer x:Name="videoPlayer" Volume="50" Playing="videoPlayer_Playing" DisplayControls="True" Repeat="True" AutoPlay="True" FillMode="Resize" Source="{Binding Source}" AbsoluteLayout.LayoutBounds="0.3,0.3,1,0.5" AbsoluteLayout.LayoutFlags="All"/>
+        <Frame x:Name="frame" Padding="0" CornerRadius="15" AbsoluteLayout.LayoutBounds="0,0.25,1,0.4" AbsoluteLayout.LayoutFlags="All">
+            <Image Source="{local:ImgRes MusicTitle.jpg}" Aspect="Fill"/>
+        </Frame>
+        <home:TextView x:Name="view"  Text="hello world!" Touched="TextView_Touched" AbsoluteLayout.LayoutBounds="0.1,0.9,1,0.1" AbsoluteLayout.LayoutFlags="All"/>
+    </AbsoluteLayout>
+
+</ContentPage>
