@@ -43,7 +43,7 @@ namespace VoshodWEB
             });
             SearchTrackCommand = new Command(async (obj) =>
             {
-                await Navigation.PushAsync(new MusicPage(await RestAPI.GetTrack(obj as string)));
+                await Navigation.PushAsync(new MusicPage(RestAPI.GetTrack(obj as string)));
             });
             ItemSelectedCommand = new Command(async (obj) =>
             {
